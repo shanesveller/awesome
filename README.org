@@ -1,0 +1,2 @@
+* [[file:snippets.org][Snippets]]
+* [[file:til.org][TIL]]

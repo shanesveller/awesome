@@ -3,28 +3,23 @@
 This is a list of tools, techniques and concepts that are on my radar, with no
 endorsement/recommendation for/against implied.
 
-* Content                                                               :TOC:
+* Contents                                                              :TOC:
  - [[#development][Development]]
+   - [[#cli-utilities][CLI utilities]]
    - [[#dotfiles][Dotfiles]]
      - [[#utilities][Utilities]]
-   - [[#cli-utilities][CLI utilities]]
    - [[#editors][Editors]]
      - [[#emacs][Emacs]]
        - [[#blogs][Blogs]]
        - [[#developers][Developers]]
-       - [[#repos][Repos]]
-       - [[#spacemacs][Spacemacs]]
-       - [[#resources][Resources]]
-         - [[#sacha-chua][Sacha Chua]]
-         - [[#irreal][Irreal]]
-       - [[#emacs-on-windows-10-via-bash][Emacs on Windows 10 via Bash?]]
        - [[#elisp][elisp]]
        - [[#org-mode][org-mode]]
+       - [[#repos][Repos]]
+       - [[#resources][Resources]]
+       - [[#spacemacs][Spacemacs]]
      - [[#xcode][XCode]]
        - [[#alcatraz][alcatraz]]
    - [[#languages][Languages]]
-     - [[#haskell][Haskell]]
-     - [[#rust][Rust]]
      - [[#elixir][Elixir]]
        - [[#deployment][Deployment]]
          - [[#conform][Conform]]
@@ -42,6 +37,8 @@ endorsement/recommendation for/against implied.
        - [[#electron][Electron]]
        - [[#elm][Elm]]
        - [[#react][React]]
+     - [[#haskell][Haskell]]
+     - [[#rust][Rust]]
    - [[#machine-learning][Machine Learning]]
      - [[#tensorflow][TensorFlow]]
  - [[#offline-hobbies][Offline Hobbies]]
@@ -51,33 +48,33 @@ endorsement/recommendation for/against implied.
    - [[#chatops][ChatOps]]
      - [[#cog][Cog]]
    - [[#cicd][CI/CD]]
-     - [[#generic][Generic]]
      - [[#artifacts][Artifacts]]
+     - [[#generic][Generic]]
      - [[#testing][Testing]]
    - [[#docker][Docker]]
      - [[#dcos][DCOS]]
-     - [[#paas][PaaS]]
-       - [[#deis][Deis]]
-       - [[#mantl][Mantl]]
-       - [[#openshift-origin][Openshift Origin]]
-       - [[#supergiant][Supergiant]]
-     - [[#reverse-proxies][Reverse Proxies]]
      - [[#kubernetes][Kubernetes]]
        - [[#helm-package-manager-helmhelm-now-kuberneteshelm][Helm package manager (helm/helm, now kubernetes/helm)]]
        - [[#aws-cluster-provisioning-coreos-kube-aws-kube-upsh-etc][AWS cluster provisioning (CoreOS ~kube-aws~, ~kube-up.sh~, etc.)]]
        - [[#kube-up-alternatives-upupcloudup][~kube-up~ alternatives (UpUp/CloudUp?)]]
        - [[#localkube-and-spread][Localkube and Spread]]
        - [[#minikube][Minikube]]
+     - [[#paas][PaaS]]
+       - [[#deis][Deis]]
+       - [[#mantl][Mantl]]
+       - [[#openshift-origin][Openshift Origin]]
+       - [[#supergiant][Supergiant]]
      - [[#rancher][Rancher]]
        - [[#rancheros][RancherOS]]
+     - [[#reverse-proxies][Reverse Proxies]]
    - [[#metrics-and-monitoring][Metrics and Monitoring]]
      - [[#elasticsearch][ElasticSearch]]
      - [[#elixir-apm][Elixir APM]]
    - [[#infrastructure-as-code][Infrastructure As Code]]
+     - [[#ansible][Ansible]]
      - [[#chef][Chef]]
        - [[#delivery][Delivery]]
        - [[#omnibus][Omnibus]]
-     - [[#ansible][Ansible]]
      - [[#saltstack][Saltstack]]
      - [[#terraform][Terraform]]
    - [[#private-cloud][Private Cloud]]
@@ -95,11 +92,6 @@ endorsement/recommendation for/against implied.
        - [[#file-sharingsynchronization][File Sharing/Synchronization]]
 
 * Development
-** Dotfiles
-*** Utilities
-- [[https://github.com/eliangcs/http-prompt][eliangcs/http-prompt]]
-- [[https://github.com/thoughtbot/dotfiles][thoughtbot/dotfiles]]
-- [[https://github.com/thoughtbot/rcm][thoughtbot/rcm]]
 ** CLI utilities
 - awk :: "text processing scripting language" - think grep with simple functions
 - desk :: manage shell environment variables, aliases, etc.
@@ -108,6 +100,11 @@ endorsement/recommendation for/against implied.
 - [[https://github.com/brettlangdon/git-vendor][git-vendor]] :: Golang-style vendoring
 - [[https://github.com/mixu/gr][gr]] :: manage many ~git~ repos at once
 - watch :: execute a command repeatedly on an interval
+** Dotfiles
+*** Utilities
+- [[https://github.com/eliangcs/http-prompt][eliangcs/http-prompt]]
+- [[https://github.com/thoughtbot/dotfiles][thoughtbot/dotfiles]]
+- [[https://github.com/thoughtbot/rcm][thoughtbot/rcm]]
 ** Editors
 *** Emacs
 - Emacs IRC client
@@ -118,16 +115,6 @@ endorsement/recommendation for/against implied.
 **** Developers
 - https://github.com/abo-abo
 - https://github.com/Malabarba
-**** Repos
-- https://github.com/Malabarba/elisp-bug-hunter
-**** Spacemacs
-- restclient
-- Spacemacs layouts
-- Spacemacs flash cards :idea:
-**** Resources
-***** Sacha Chua
-***** Irreal
-**** Emacs on Windows 10 via Bash?
 **** elisp
 **** [[http://orgmode.org/][org-mode]]
 - file backups
@@ -150,11 +137,18 @@ endorsement/recommendation for/against implied.
 - org-pomodoro
 - Spacemacs integration
 - task manager with org synchronization?
+**** Repos
+- https://github.com/Malabarba/elisp-bug-hunter
+**** Resources
+- Sacha Chua
+- Irreal
+**** Spacemacs
+- restclient
+- Spacemacs layouts
+- Spacemacs flash cards :idea:
 *** XCode
 **** [[http://alcatraz.io/][alcatraz]]
 ** Languages
-*** Haskell
-*** Rust
 *** Elixir
 **** Deployment
 ***** Conform
@@ -186,6 +180,8 @@ endorsement/recommendation for/against implied.
 **** React
 - https://github.com/garbles/why-did-you-update
 - https://github.com/kadirahq/react-storybook
+*** Haskell
+*** Rust
 ** Machine Learning
 *** TensorFlow
 - https://github.com/jtoy/awesome-tensorflow
@@ -203,6 +199,9 @@ endorsement/recommendation for/against implied.
 :Languages: Elixir, Golang
 :END:
 ** CI/CD
+*** Artifacts
+- Artifactory
+- Sonatype Nexus
 *** Generic
 - Chef Delivery
 - Concourse
@@ -211,9 +210,6 @@ endorsement/recommendation for/against implied.
   - Sidekick services/dependencies i.e. ~Postgres~, ~Redis~
 - GoCD
 - Jenkins 2
-*** Artifacts
-- Artifactory
-- Sonatype Nexus
 *** Testing
 - Drone
 - GitLab CI
@@ -223,24 +219,24 @@ endorsement/recommendation for/against implied.
 - Docker builds via Packer
 - Nomad
 *** DCOS
-*** PaaS
-**** Deis
-**** Mantl
-**** Openshift Origin
-**** [[http://supergiant.io/][Supergiant]]
-*** Reverse Proxies
-- ebay/fabio
-- traefik
-- romulusd
-- vulcand
 *** Kubernetes
 **** Helm package manager ([[https://github.com/helm/helm][helm/helm]], now [[https://github.com/kubernetes/helm][kubernetes/helm]])
 **** AWS cluster provisioning (CoreOS ~kube-aws~, ~kube-up.sh~, etc.)
 **** ~kube-up~ alternatives (UpUp/CloudUp?)
 **** [[https://github.com/redspread/localkube][Localkube]] and [[https://github.com/redspread/spread][Spread]]
 **** [[https://github.com/kubernetes/minikube][Minikube]]
+*** PaaS
+**** Deis
+**** Mantl
+**** Openshift Origin
+**** [[http://supergiant.io/][Supergiant]]
 *** Rancher
 **** RancherOS
+*** Reverse Proxies
+- ebay/fabio
+- traefik
+- romulusd
+- vulcand
 ** Metrics and Monitoring
 - Grafana
 - Graphite
@@ -265,6 +261,7 @@ endorsement/recommendation for/against implied.
 - [[https://github.com/ferd/recon/][Recon]]
 - Statsd
 ** Infrastructure As Code
+*** Ansible
 *** Chef
 - Chef + Vault
 - Chef in ASG clients
@@ -274,7 +271,6 @@ endorsement/recommendation for/against implied.
     - delivery-cli in CI builds: https://github.com/chef-cookbooks/mysql/commit/d539e3c621c009e439a5e1d3573268a876d223d2
   - [[https://github.com/chef-cookbooks/delivery-truck][delivery-truck]]
 **** [[https://github.com/chef/omnibus][Omnibus]]
-*** Ansible
 *** Saltstack
 - agentless usage with ~salt-ssh~
 - CI/CD of formulas
@@ -296,7 +292,6 @@ endorsement/recommendation for/against implied.
 :PROPERTIES:
 :Repo: https://github.com/joyent/sdc
 :END:
-- Repo ::
 *** Xen
 ** Services
 Self-hosted services I might be interested in running a copy of one day.

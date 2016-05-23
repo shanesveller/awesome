@@ -3,7 +3,7 @@
  - [[#chef][Chef]]
    - [[#bootstrap-new-chef-node][Bootstrap new Chef node]]
  - [[#emacs][Emacs]]
-   - [[#edit-a-remote-file-via-tramp-sshsudo-2016-05-20-fri-1645][Edit a remote file via Tramp SSH+sudo [2016-05-20 Fri 16:45]]]
+   - [[#edit-a-remote-file-via-tramp-sshsudo][Edit a remote file via Tramp SSH+sudo]]
  - [[#git][Git]]
    - [[#repository-management][Repository Management]]
      - [[#extract-subdirectory][Extract Subdirectory]]
@@ -28,7 +28,8 @@
 knife bootstrap user@host -N node-name -r 'recipe[apt::default]' --sudo
 #+END_SRC
 * Emacs
-** [[https://www.emacswiki.org/emacs/TrampMode#toc13][Edit a remote file via Tramp SSH+sudo]] [2016-05-20 Fri 16:45]
+** [[https://www.emacswiki.org/emacs/TrampMode#toc13][Edit a remote file via Tramp SSH+sudo]]
+[2016-05-20 Fri 16:45]
 @@html:<kbd>@@ C-x C-f @@html:</kbd>@@
 #+BEGIN_EXAMPLE
 /ssh:user@host|sudo:root@host:/path/to/file

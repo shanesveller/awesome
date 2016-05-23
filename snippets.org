@@ -1,0 +1,49 @@
+* Chef
+** Bootstrap new Chef node
+#+BEGIN_SRC bash
+knife bootstrap user@host -N node-name -r 'recipe[apt::default]' --sudo
+#+END_SRC
+* Emacs
+** [[https://www.emacswiki.org/emacs/TrampMode#toc13][Edit a remote file via Tramp SSH+sudo]] [2016-05-20 Fri 16:45]
+@@html:<kbd>@@ C-x C-f @@html:</kbd>@@
+#+BEGIN_EXAMPLE
+/ssh:user@host|sudo:root@host:/path/to/file
+#+END_EXAMPLE
+* Git
+** Repository Management
+*** Extract Subdirectory
+#+BEGIN_SRC bash
+git filter-branch --prune-empty --subdirectory-filter YOUR_FOLDER_NAME YOUR_BRANCH
+git remote set-url origin YOUR_NEW_URL
+#+END_SRC
+* Linux
+** Networking
+*** File Transfers
+**** Rsync to a root-only remote path
+#+BEGIN_SRC bash
+rsync -ahvzP --rsync-path="sudo rsync" --stats local/path/ user@host:/remote/path/
+#+END_SRC
+*** Security
+**** UFW per-interface rules
+#+BEGIN_SRC bash
+ufw allow in on eth1 to [eth1 ip addr] port 80 proto tcp
+#+END_SRC
+* OSX
+** Finder
+*** Show hidden files in Finder
+#+BEGIN_SRC bash
+defaults write com.apple.finder AppleShowAllFiles YES
+killall Finder
+#+END_SRC
+** iTunes
+*** Disable Keyboard Media Keys
+(/Unconfirmed on El Capitan/)
+#+BEGIN_SRC bash
+launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
+#+END_SRC
+* SmartOS
+** ZFS
+*** Snapshot all zones recursively with timestamp
+#+BEGIN_SRC bash
+zfs snapshot -r zones@snapshot-name-$(date +%Y%m%d-%H%M%S)
+#+END_SRC

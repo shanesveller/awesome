@@ -1,57 +1,6 @@
 #+STARTUP: showall
-* Emacs
-** Edit a remote file via Tramp SSH+sudo [2016-05-20 Fri 16:45]
-@@html:<kbd>@@ C-x C-f @@html:</kbd>@@
-#+BEGIN_EXAMPLE
-/ssh:user@host|sudo:root@host:/path/to/file
-#+END_EXAMPLE
-
-Source:
-https://www.emacswiki.org/emacs/TrampMode#toc13
 * Erlang
 ** Kill an Erlang pid from shell
 #+BEGIN_QUOTE
 ctrl+c`, then `k`, then `n` until you've found the process you're looking for (which might be the first), then `k` and finally `r`
 #+END_QUOTE
-* Git
-** Repository Management
-*** Extract Subdirectory
-#+BEGIN_SRC bash
-git filter-branch --prune-empty --subdirectory-filter YOUR_FOLDER_NAME YOUR_BRANCH
-git remote set-url origin YOUR_NEW_URL
-#+END_SRC
-* Linux
-** Administration
-*** Bootstrap new Chef node
-#+BEGIN_SRC bash
-knife bootstrap user@host -N node-name -r 'recipe[apt::default]' --sudo
-#+END_SRC
-** Networking
-*** Ubuntu
-**** Security
-***** UFW per-interface rules
-#+BEGIN_SRC bash
-ufw allow in on eth1 to [eth1 ip addr] port 80 proto tcp
-#+END_SRC
-***** Rsync to a root-only remote path
-#+BEGIN_SRC bash
-rsync -chavzP --rsync-path="sudo rsync" --stats local/path/ user@host:/remote/path/
-#+END_SRC
-* OSX
-** Finder
-*** Show hidden files in Finder
-#+BEGIN_SRC bash
-defaults write com.apple.finder AppleShowAllFiles YES
-killall Finder
-#+END_SRC
-** iTunes
-*** Disable Keyboard Media Keys
-#+BEGIN_SRC bash
-launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
-#+END_SRC
-* Solaris
-** ZFS Administration
-*** Snapshot all zones on SmartOS/SDC
-#+BEGIN_SRC bash
-zfs snapshot -r zones@fresh-install-$(date +%Y%m%d-%H%M%S)
-#+END_SRC

@@ -1,3 +1,27 @@
+#+STARTUP: content
+* Contents                                                              :TOC:
+ - [[#chef][Chef]]
+   - [[#bootstrap-new-chef-node][Bootstrap new Chef node]]
+ - [[#emacs][Emacs]]
+   - [[#edit-a-remote-file-via-tramp-sshsudo-2016-05-20-fri-1645][Edit a remote file via Tramp SSH+sudo [2016-05-20 Fri 16:45]]]
+ - [[#git][Git]]
+   - [[#repository-management][Repository Management]]
+     - [[#extract-subdirectory][Extract Subdirectory]]
+ - [[#linux][Linux]]
+   - [[#networking][Networking]]
+     - [[#file-transfers][File Transfers]]
+       - [[#rsync-to-a-root-only-remote-path][Rsync to a root-only remote path]]
+     - [[#security][Security]]
+       - [[#ufw-per-interface-rules][UFW per-interface rules]]
+ - [[#osx][OSX]]
+   - [[#finder][Finder]]
+     - [[#show-hidden-files-in-finder][Show hidden files in Finder]]
+   - [[#itunes][iTunes]]
+     - [[#disable-keyboard-media-keys][Disable Keyboard Media Keys]]
+ - [[#smartos][SmartOS]]
+   - [[#zfs][ZFS]]
+     - [[#snapshot-all-zones-recursively-with-timestamp][Snapshot all zones recursively with timestamp]]
+
 * Chef
 ** Bootstrap new Chef node
 #+BEGIN_SRC bash

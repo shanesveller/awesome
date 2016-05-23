@@ -1,4 +1,8 @@
 #+STARTUP: showall
+* Contents                                                              :TOC:
+ - [[#erlang][Erlang]]
+   - [[#kill-an-erlang-pid-from-shell][Kill an Erlang pid from shell]]
+
 * Erlang
 ** Kill an Erlang pid from shell
 #+BEGIN_QUOTE

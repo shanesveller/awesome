@@ -1,0 +1,317 @@
+#+STARTUP: content
+
+This is a list of tools, techniques and concepts that are on my radar, with no
+endorsement/recommendation for/against implied.
+
+* Content                                                               :TOC:
+ - [[#development][Development]]
+   - [[#dotfiles][Dotfiles]]
+     - [[#utilities][Utilities]]
+   - [[#cli-utilities][CLI utilities]]
+   - [[#editors][Editors]]
+     - [[#emacs][Emacs]]
+       - [[#blogs][Blogs]]
+       - [[#developers][Developers]]
+       - [[#repos][Repos]]
+       - [[#spacemacs][Spacemacs]]
+       - [[#resources][Resources]]
+         - [[#sacha-chua][Sacha Chua]]
+         - [[#irreal][Irreal]]
+       - [[#emacs-on-windows-10-via-bash][Emacs on Windows 10 via Bash?]]
+       - [[#elisp][elisp]]
+       - [[#org-mode][org-mode]]
+     - [[#xcode][XCode]]
+       - [[#alcatraz][alcatraz]]
+   - [[#languages][Languages]]
+     - [[#haskell][Haskell]]
+     - [[#rust][Rust]]
+     - [[#elixir][Elixir]]
+       - [[#deployment][Deployment]]
+         - [[#conform][Conform]]
+         - [[#edib][EDIB]]
+         - [[#exrm][Exrm]]
+       - [[#editor-integration][Editor Integration]]
+         - [[#alchemist][Alchemist]]
+         - [[#flycheck-credo][flycheck-credo]]
+       - [[#databases][Databases]]
+         - [[#ecto][Ecto]]
+       - [[#embedded][Embedded]]
+       - [[#libraries][Libraries]]
+       - [[#phoenix][Phoenix]]
+     - [[#frontend-development][Frontend Development]]
+       - [[#electron][Electron]]
+       - [[#elm][Elm]]
+       - [[#react][React]]
+   - [[#machine-learning][Machine Learning]]
+     - [[#tensorflow][TensorFlow]]
+ - [[#offline-hobbies][Offline Hobbies]]
+   - [[#board-games][Board Games]]
+   - [[#homebrewing][Homebrewing]]
+ - [[#operations][Operations]]
+   - [[#chatops][ChatOps]]
+     - [[#cog][Cog]]
+   - [[#cicd][CI/CD]]
+     - [[#generic][Generic]]
+     - [[#artifacts][Artifacts]]
+     - [[#testing][Testing]]
+   - [[#docker][Docker]]
+     - [[#dcos][DCOS]]
+     - [[#paas][PaaS]]
+       - [[#deis][Deis]]
+       - [[#mantl][Mantl]]
+       - [[#openshift-origin][Openshift Origin]]
+       - [[#supergiant][Supergiant]]
+     - [[#reverse-proxies][Reverse Proxies]]
+     - [[#kubernetes][Kubernetes]]
+       - [[#helm-package-manager-helmhelm-now-kuberneteshelm][Helm package manager (helm/helm, now kubernetes/helm)]]
+       - [[#aws-cluster-provisioning-coreos-kube-aws-kube-upsh-etc][AWS cluster provisioning (CoreOS ~kube-aws~, ~kube-up.sh~, etc.)]]
+       - [[#kube-up-alternatives-upupcloudup][~kube-up~ alternatives (UpUp/CloudUp?)]]
+       - [[#localkube-and-spread][Localkube and Spread]]
+       - [[#minikube][Minikube]]
+     - [[#rancher][Rancher]]
+       - [[#rancheros][RancherOS]]
+   - [[#metrics-and-monitoring][Metrics and Monitoring]]
+     - [[#elasticsearch][ElasticSearch]]
+     - [[#elixir-apm][Elixir APM]]
+   - [[#infrastructure-as-code][Infrastructure As Code]]
+     - [[#chef][Chef]]
+       - [[#delivery][Delivery]]
+       - [[#omnibus][Omnibus]]
+     - [[#ansible][Ansible]]
+     - [[#saltstack][Saltstack]]
+     - [[#terraform][Terraform]]
+   - [[#private-cloud][Private Cloud]]
+     - [[#openstack][OpenStack]]
+     - [[#triton][Triton]]
+     - [[#xen][Xen]]
+   - [[#services][Services]]
+     - [[#chat][Chat]]
+     - [[#cicd-1][CI/CD]]
+       - [[#drone][Drone]]
+       - [[#gitlab-ci][GitLab CI]]
+     - [[#git][Git]]
+       - [[#gogs][Gogs]]
+       - [[#gitlab][GitLab]]
+       - [[#file-sharingsynchronization][File Sharing/Synchronization]]
+
+* Development
+** Dotfiles
+*** Utilities
+- [[https://github.com/eliangcs/http-prompt][eliangcs/http-prompt]]
+- [[https://github.com/thoughtbot/dotfiles][thoughtbot/dotfiles]]
+- [[https://github.com/thoughtbot/rcm][thoughtbot/rcm]]
+** CLI utilities
+- awk :: "text processing scripting language" - think grep with simple functions
+- desk :: manage shell environment variables, aliases, etc.
+- [[http://entrproject.org/][entr]] :: take arbitrary actions when any of a provided list of files change
+- [[https://github.com/ingydotnet/git-subrepo][git-subrepo]] :: maintain a subdirectory as a separate, synchronized repository
+- [[https://github.com/brettlangdon/git-vendor][git-vendor]] :: Golang-style vendoring
+- [[https://github.com/mixu/gr][gr]] :: manage many ~git~ repos at once
+- watch :: execute a command repeatedly on an interval
+** Editors
+*** Emacs
+- Emacs IRC client
+- GMANE
+**** Blogs
+- http://doc.endlessparentheses.com/
+- http://www.howardism.org/
+**** Developers
+- https://github.com/abo-abo
+- https://github.com/Malabarba
+**** Repos
+- https://github.com/Malabarba/elisp-bug-hunter
+**** Spacemacs
+- restclient
+- Spacemacs layouts
+- Spacemacs flash cards :idea:
+**** Resources
+***** Sacha Chua
+***** Irreal
+**** Emacs on Windows 10 via Bash?
+**** elisp
+**** [[http://orgmode.org/][org-mode]]
+- file backups
+- file versioning
+- git integration
+- Hugo integration
+- literate programming
+  - http://www.howardism.org/Technical/LP/introduction.html
+  - http://www.howardism.org/Technical/Emacs/literate-devops.html
+- live preview in browser
+- multiple topical org documents
+- org "tangle"
+- org CALDAV/WebDAV
+- org cross references
+- org export themes/templates
+- org-agenda
+- [[http://orgmode.org/worg/org-contrib/babel/][org-babel]]
+- org-contrib
+- org-drill
+- org-pomodoro
+- Spacemacs integration
+- task manager with org synchronization?
+*** XCode
+**** [[http://alcatraz.io/][alcatraz]]
+** Languages
+*** Haskell
+*** Rust
+*** Elixir
+**** Deployment
+***** Conform
+***** EDIB                                                       :docker:
+***** Exrm
+**** Editor Integration
+***** Alchemist
+***** [[https://github.com/smeevil/flycheck-elixir-credo][flycheck-credo]]
+**** Databases
+***** Ecto
+- [[http://blog.plataformatec.com.br/2016/04/ecto-2-0-0-rc-is-out/][2.0 RC]]
+  - [[http://blog.plataformatec.com.br/2016/05/ectos-insert_all-and-schemaless-queries/][~insert_all~ and Schemaless queries]]
+- [[http://blog.plataformatec.com.br/2015/08/working-with-ecto-associations-and-embeds/][Working With Ecto Associations/Embeds]]
+**** Embedded
+- [[http://nerves-project.org/][Nerves]] - BEAM apps for Raspberry Pi/ARM architecture, etc.
+**** Libraries
+- [[http://toolbox.elixir.pm/][Beam Toolbox]]
+**** Phoenix
+- Phoenix (sub)domain routing
+- Phoenix authentication/authorization
+  - Phoenix CanCan alternative
+  - Ueberauth
+- Umbrella apps - Django- or Rails Engine-style sub-apps
+*** Frontend Development
+**** [[https://github.com/electron/electron][Electron]]
+- https://github.com/electron/electron-api-demos
+- https://github.com/electron/devtron
+**** Elm
+**** React
+- https://github.com/garbles/why-did-you-update
+- https://github.com/kadirahq/react-storybook
+** Machine Learning
+*** TensorFlow
+- https://github.com/jtoy/awesome-tensorflow
+- https://github.com/tensorflow/models
+
+* Offline Hobbies
+** Board Games
+- [[http://boardgamegeek.com/][Board Game Geek]]
+- [[http://www.chicagolandgames.com/][Chicagoland Games Dice Dojo]]
+** Homebrewing
+* Operations
+** ChatOps
+*** [[https://github.com/operable/cog][Cog]]
+:PROPERTIES:
+:Languages: Elixir, Golang
+:END:
+** CI/CD
+*** Generic
+- Chef Delivery
+- Concourse
+  - Docker-in-Docker
+    - Docker Compose
+  - Sidekick services/dependencies i.e. ~Postgres~, ~Redis~
+- GoCD
+- Jenkins 2
+*** Artifacts
+- Artifactory
+- Sonatype Nexus
+*** Testing
+- Drone
+- GitLab CI
+** Docker
+- Autopilot Pattern
+- ContainerBuddy
+- Docker builds via Packer
+- Nomad
+*** DCOS
+*** PaaS
+**** Deis
+**** Mantl
+**** Openshift Origin
+**** [[http://supergiant.io/][Supergiant]]
+*** Reverse Proxies
+- ebay/fabio
+- traefik
+- romulusd
+- vulcand
+*** Kubernetes
+**** Helm package manager ([[https://github.com/helm/helm][helm/helm]], now [[https://github.com/kubernetes/helm][kubernetes/helm]])
+**** AWS cluster provisioning (CoreOS ~kube-aws~, ~kube-up.sh~, etc.)
+**** ~kube-up~ alternatives (UpUp/CloudUp?)
+**** [[https://github.com/redspread/localkube][Localkube]] and [[https://github.com/redspread/spread][Spread]]
+**** [[https://github.com/kubernetes/minikube][Minikube]]
+*** Rancher
+**** RancherOS
+** Metrics and Monitoring
+- Grafana
+- Graphite
+- InfluxDB
+- Prometheus
+- Riemann
+- Sensu
+- Statsd
+  - [[https://github.com/armon/statsite][armon/statsite]]
+*** ElasticSearch
+- http://rmoff.net/2016/05/12/monitoring-logstash-ingest-rates-with-influxdb-and-grafana/
+- https://www.elastic.co/blog/timelion-timeline
+  - http://rmoff.net/2016/05/13/monitoring-logstash-ingest-rates-with-elasticsearch-kibana-and-timelion/
+- https://www.elastic.co/guide/en/sense/current/installing.html
+- [[https://github.com/Yelp/elastalert][yelp/elastalert]]
+*** Elixir APM
+- [[http://github.com/hahuang65/beaker][Beaker]]
+- Dogstatsd
+- [[https://hex.pm/packages/folsom][Folsom]]
+- [[https://github.com/rwdaigle/metrix][Metrix]]
+- [[https://github.com/obmarg/plug_fprof][plug_fprof]]
+- [[https://github.com/ferd/recon/][Recon]]
+- Statsd
+** Infrastructure As Code
+*** Chef
+- Chef + Vault
+- Chef in ASG clients
+- https://github.com/Nordstrom/chefdk_bootstrap
+**** [[https://www.chef.io/delivery/][Delivery]]
+  - [[https://github.com/chef/delivery-cli/][delivery-cli]]
+    - delivery-cli in CI builds: https://github.com/chef-cookbooks/mysql/commit/d539e3c621c009e439a5e1d3573268a876d223d2
+  - [[https://github.com/chef-cookbooks/delivery-truck][delivery-truck]]
+**** [[https://github.com/chef/omnibus][Omnibus]]
+*** Ansible
+*** Saltstack
+- agentless usage with ~salt-ssh~
+- CI/CD of formulas
+- CI/CD of pillars
+- Git backing of pillars and formulas
+- native usage on OSX
+- salt-cloud
+*** Terraform
+- Ansible Provisioner
+- CI/linting
+- ~cloud-init~ resource
+- Kubernetes Provider
+- Saltstack Provisioner
+- Triton Provider
+** Private Cloud
+*** OpenStack
+- ~Stackanetes~
+*** [[https://github.com/joyent/sdc][Triton]]
+:PROPERTIES:
+:Repo: https://github.com/joyent/sdc
+:END:
+- Repo ::
+*** Xen
+** Services
+Self-hosted services I might be interested in running a copy of one day.
+*** Chat
+- ~ejabberd~ :: Jabber/XMPP daemon with options for Elixir plugins/integration
+- (IRC daemon) :: /Unsure which is best-of-breed right now/
+- [[Http://www.mattermost.org/][Mattermost]] :: Slack clone
+- ZNC :: IRC "bouncer"
+*** CI/CD
+**** Drone
+**** GitLab CI
+*** Git
+**** Gogs
+Golang clone of Github
+**** GitLab
+Rails clone of Github with built-in horizontally-scaling CI integration
+**** File Sharing/Synchronization
+- Owncloud
